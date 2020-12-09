@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "components",
+  "info": {
+    "name": "Components"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "json": {
+      "type": "json"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "html": {
+      "type": "text"
+    },
+    "image_uri": {
+      "type": "text"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "element",
+        "component",
+        "widget",
+        "template",
+        "layout",
+        "page",
+        "slider",
+        "gallery"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "loop_type": {
+      "type": "enumeration",
+      "enum": [
+        "articles",
+        "last",
+        "category",
+        "tags"
+      ],
+      "default": "articles"
+    },
+    "default": {
+      "type": "boolean",
+      "default": false
+    },
+    "favorite": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
