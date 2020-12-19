@@ -91,6 +91,9 @@
       "type": "string",
       "default": "en",
       "required": false
+    },
+    "template_id": {
+      "type": "string"
     }
   }
 }

@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "components",
   "info": {
-    "name": "Components"
+    "name": "Components",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -45,7 +47,9 @@
         "layout",
         "page",
         "slider",
-        "gallery"
+        "gallery",
+        "archive",
+        "starred"
       ]
     },
     "enabled": {
@@ -55,16 +59,6 @@
       "type": "boolean",
       "default": false
     },
-    "loop_type": {
-      "type": "enumeration",
-      "enum": [
-        "articles",
-        "last",
-        "category",
-        "tags"
-      ],
-      "default": "articles"
-    },
     "default": {
       "type": "boolean",
       "default": false
@@ -72,6 +66,23 @@
     "favorite": {
       "type": "boolean",
       "default": false
+    },
+    "loop_limit": {
+      "type": "integer"
+    },
+    "loop_pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "loop_type": {
+      "type": "string",
+      "default": "articles"
+    },
+    "tags": {
+      "type": "text"
+    },
+    "blocks_id": {
+      "type": "string"
     }
   }
 }
