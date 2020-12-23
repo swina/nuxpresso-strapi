@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build & strapi config:restore -f nuxpresso.json",
+    "build": "strapi build --clean & strapi config:restore -f nuxpresso.json",
     "strapi": "strapi"
   },
   "devDependencies": {},
@@ -22,8 +22,8 @@
     "strapi-plugin-graphql": "^3.3.4",
     "strapi-plugin-upload": "3.3.4",
     "strapi-plugin-users-permissions": "3.3.4",
-    "strapi-provider-email-mailgun": "^3.1.2",
-    "strapi-provider-upload-cloudinary": "^3.1.2",
+    "strapi-provider-email-mailgun": "^3.3.4",
+    "strapi-provider-upload-cloudinary": "^3.3.4",
     "strapi-utils": "3.3.4"
   },
   "author": {

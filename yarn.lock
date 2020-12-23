@@ -10405,13 +10405,13 @@ strapi-plugin-users-permissions@3.3.4:
     strapi-utils "3.3.4"
     uuid "^3.1.0"
 
-strapi-provider-email-mailgun@^3.1.2:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/strapi-provider-email-mailgun/-/strapi-provider-email-mailgun-3.3.4.tgz#9cf6470ba005997d6a5f8e517a5049ab845de899"
-  integrity sha512-yPNHkku9gsPTB1HRvuPzwIWWCaIRND/IA97/TkYvqnvC/v0dXBCQn/ZJfC4QIHbbroqh4v2eay8ec4LYphBXoQ==
+strapi-provider-email-mailgun@^3.3.4:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/strapi-provider-email-mailgun/-/strapi-provider-email-mailgun-3.4.1.tgz#aaacfd083e094d9d9e9af58f58106969bceac7a4"
+  integrity sha512-nqLMvnLeMoyrkUnEapG2rSfViMcajVKzlNZdFmbXJnLFI0CzHq2DMOKdcAji9YwV8mZcV4fO/mUsmLTyzFlTcQ==
   dependencies:
     mailgun-js "0.22.0"
-    strapi-utils "3.3.4"
+    strapi-utils "3.4.1"
 
 strapi-provider-email-sendmail@3.3.4:
   version "3.3.4"
@@ -10421,10 +10421,10 @@ strapi-provider-email-sendmail@3.3.4:
     sendmail "^1.6.1"
     strapi-utils "3.3.4"
 
-strapi-provider-upload-cloudinary@^3.1.2:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.3.4.tgz#9a478a13911dcef2e592eee40dd8b201c1991299"
-  integrity sha512-vzl2cJP39y+jjNcTi2dnbA+VE6JiiAKkbTAHsDXkxG8SsM7z8nf/L92+/WMWuyQqh3FbKYVzsSclbB7dQnY4Dg==
+strapi-provider-upload-cloudinary@^3.3.4:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-cloudinary/-/strapi-provider-upload-cloudinary-3.4.1.tgz#3d74d1409f42bf3d1dc2abc6d00843fb6032f04d"
+  integrity sha512-z6TPUAVOuqERZmkgSZLaon9Lrxq6oMYadj62TswbOXL/IdQ82Gcd1goGVKhnQDKM3KcLfZxbydJLlBVFj29CnA==
   dependencies:
     cloudinary "^1.23.0"
     into-stream "^5.1.0"
@@ -10438,6 +10438,18 @@ strapi-utils@3.3.4:
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.3.4.tgz#d45148779897dc6705a7afb46fe49368b4a4e11e"
   integrity sha512-5rIberNccSIzKQGtfnsH37fBjDmsMkP2Lak1qlioYbohlhel23rN7nvq7PRN+VlFoNVsZAIj91mveZKKG1tsvw==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "^2.8.1"
+    lodash "4.17.19"
+    pino "^4.7.1"
+    pluralize "^8.0.0"
+    yup "0.29.3"
+
+strapi-utils@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.4.1.tgz#a9616e0fdc33b4a9c628bf64dcf02544673b25b1"
+  integrity sha512-1HKTl+YA924qLKgos+p+UrnNDfugJJ8NdZkjTll6RJH/KsWivSicrbTgCY0wQLg89/Ba9LHDTaPQ7smxFqZaGg==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "^2.8.1"
